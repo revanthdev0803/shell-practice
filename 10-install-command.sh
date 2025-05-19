@@ -6,9 +6,10 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo "run with root user"
+    echo "please run with root user"
 else
     echo "you are the root user"
 fi
 
 
+dnf install mysql -y
