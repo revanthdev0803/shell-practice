@@ -13,6 +13,8 @@ else
 fi
 
 dnf list installed mysql
+#if installed or not
+
 
 if [ $? -ne 0 ]
 then
@@ -29,3 +31,4 @@ then
 else
     echo "mysql is allready installed.....nothing to do"
 fi
+
