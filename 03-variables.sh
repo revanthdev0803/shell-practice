@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-person1=modi
-person2=musk
+person1=revanth
+person2=lakshmi
 
 echo "$person1: hey $person2, how are you?"
 echo "$person2: hello $person1, i am fine. how are you doing?"
