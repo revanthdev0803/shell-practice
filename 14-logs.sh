@@ -12,10 +12,10 @@ N="\e[0m" #no colour
 
 LOGS_FOLDER="/var/log/shellcripts-logs" #we create this path for storing our logs
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1) # it removes the .sh in script name
-LOG_FILE="$LOGS_FOLDER/$SCRIPT_NMAE.log"
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER #we are making directry and telling if it is already dont give error by using -p
-echo "script started at : $(date)" &>>LOG_FILE
+echo "script started at : $(date)" &>>$LOG_FILE
 
 #we are checking that if user was not equal to zero or not
 #root user id will be zero,if not we will give error
