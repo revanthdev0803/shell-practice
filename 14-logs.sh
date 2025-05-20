@@ -42,7 +42,6 @@ VALIDATE(){
 }
 
 
-echo "page1"
 
 
 dnf list installed mysql &>>$LOG_FILE
@@ -72,7 +71,6 @@ else
 fi
 
 
-echo "page2"
 
 
 dnf list installed nginx &>>$LOG_FILE
