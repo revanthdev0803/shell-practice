@@ -28,9 +28,8 @@ else
     echo "you are the root user"
 fi
 
-#we use this function if given one is installed or not ,to reduce the steps we use this
-
-#here we are sending two arguments to the function one is exit status as $1=$? $2=is the package name to install
+ #we use this function if given one is installed or not ,to reduce the steps we use this
+ #here we are sending two arguments to the function one is exit status as $1=$? $2=is the package name to install
 VALIDATE(){
 
     if [ $1 -eq 0 ]
