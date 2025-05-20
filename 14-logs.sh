@@ -10,7 +10,7 @@ G="\e[32m" #green
 Y="\e[33m" #yellow
 N="\e[0m" #no colour
 
-LOGS_FOLDER="/var/log/shellcripts-logs"    #we create this path for storing our logs
+LOGS_FOLDER="/var/log/shellscripts-logs"    #we create this path for storing our logs
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)  # it removes the .sh in script name
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
