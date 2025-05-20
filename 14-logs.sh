@@ -15,7 +15,7 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1) # it removes the .sh in script name
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER #we are making directry and telling if it is already dont give error by using -p
-echo "script started at : $(date)" &>>$LOG_FILE
+echo "script started at: $(date)" &>>$LOG_FILE
 
 #we are checking that if user was not equal to zero or not
 #root user id will be zero,if not we will give error
@@ -25,7 +25,7 @@ then
     echo -e "$R Errorr....$N please run with root user" &>>$LOG_FILE 
     exit 1 #give any number except zero for checking status
 else
-    echo "you are the root user"
+    echo "you are the root user" &>>$LOG_FILE
 fi
 
  #we use this function if given one is installed or not ,to reduce the steps we use this
@@ -40,6 +40,10 @@ VALIDATE(){
         exit 1
     fi
 }
+
+
+echo "page1"
+
 
 dnf list installed mysql &>>$LOG_FILE
 #this command will check is mysql is  installed or not
@@ -66,6 +70,10 @@ then
 else
     echo "python3 is allready installed.....nothing to do" &>>$LOG_FILE
 fi
+
+
+echo "page2"
+
 
 dnf list installed nginx &>>$LOG_FILE
 #if installed or not
