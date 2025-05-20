@@ -54,5 +54,4 @@ do
     else
         echo -e "$package is allready installed.....$Y nothing to do $N" | tee -a $LOG_FILE 
     fi
-
-
+done
