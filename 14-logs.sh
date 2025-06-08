@@ -42,8 +42,6 @@ VALIDATE(){
 }
 
 
-
-
 dnf list installed mysql &>>$LOG_FILE
 #this command will check is mysql is  installed or not
 
@@ -69,8 +67,6 @@ then
 else
     echo "python3 is allready installed.....nothing to do" | tee -a $LOG_FILE 
 fi
-
-
 
 
 dnf list installed nginx &>>$LOG_FILE
